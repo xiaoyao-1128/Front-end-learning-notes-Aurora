@@ -84,3 +84,232 @@
 
 # 第二章：HTML标签
 
+## 1. 常用基础标签
+
+### 1. h1 - h6 标题标签
+
+```javascript
+<h1>这是标题 1</h1>
+<h2>这是标题 2</h2>
+<h3>这是标题 3</h3>
+<h4>这是标题 4</h4>
+<h5>这是标题 5</h5>
+<h6>这是标题 6</h6>
+```
+
+页面结果：
+
+![image-20201215165349998](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20201215165349998.png)
+
+注意:
+
+- h1~h6 主要用来表示文章的标题或者区块内容的标题。
+- h1~h6 根据重要性依次降低。
+- h1 一个页面只出现依次。
+
+
+
+### 2. 段落标签 p
+
+```javascript
+<p>我是一个段落标签</p>
+```
+
+
+
+![image-20201215170332313](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20201215170332313.png)
+
+注意：
+
+- 定义段落，p 标签会自动在其前后创建一些空白。游览器会自动添加这些空间。
+
+
+
+### 3. 链接标签 a
+
+```javascript
+<a href="http://www.baidu.com">百度</a>
+```
+
+![image-20201215170754960](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20201215170754960.png)
+
+注意：
+
+- 标签定义超链接，用于从一张页面链接到另一张页面
+- 属性：
+  - href：需要链接的地址，指示链接的目标。
+  - target：规定打开链接的位置。_blank 新空白页面、 _self 本页面
+  - 。。。
+- a链接在游览器中有默认样式，一般需要清楚其默认样式。
+
+
+
+### 4. 图片标签 img
+
+```
+<img src="./lafa.jpg" alt="">
+```
+
+![image-20201215171632960](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20201215171632960.png)
+
+注意：
+
+- 两个必须的属性：src 和 alt
+  - src 为图片的地址
+  - 规定图像的代替文本
+
+
+
+### 5. 表格标签 table
+
+```javascript
+<table>
+   <tr>
+       <th>111</th>
+       <th>222</th>
+   </tr>
+   <tr>
+       <td>qqq</td>
+       <td>www</td>
+   </tr>
+</table>
+```
+
+
+
+![image-20201215171932860](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20201215171932860.png)
+
+注意：
+
+- 简单的表格由 table 标签以及一个或多个tr、th、或td 标签组成。
+- tr 定义表格行，th定义表头，td定义表格单元。
+
+
+
+### 6. 列表标签
+
+#### 1. 无序列表 (ul>li)
+
+```javascript
+<ul>
+    <li>JavaScript</li>
+    <li>TypeScript</li>
+    <li>Java</li>
+</ul>
+```
+
+
+
+![image-20201215172351228](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20201215172351228.png)
+
+#### 2. 有序列表 (ol>li)
+
+```
+<ol>
+     <li>js</li>
+     <li>java</li>
+     <li>python</li>
+</ol>
+```
+
+
+
+![image-20201215172602816](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20201215172602816.png)
+
+#### 3. 自定义列表 (dl>dt dd)
+
+```
+<dl>
+    <dt>计算机</dt>
+    <dd>用来计算的仪器 ... ...</dd>
+    <dt>显示器</dt>
+    <dd>以视觉方式显示信息的装置 ... ...</dd>
+</dl>
+```
+
+
+
+![image-20201215172717681](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20201215172717681.png)
+
+### 7. 表单标签 input
+
+- type属性
+  - button：按钮
+  - checkbox：复选框
+  - file：文件
+  - hidden：隐藏域
+  - image：图片
+  - password：密码框
+  - radio：单选框
+  - reset：重置按钮
+  - submit：提交按钮
+  - text：文本域
+
+### 8. 网页头部 header
+
+通常包括网站标志、主导航、全站链接以及搜索框
+
+
+
+### 9. 导航标签 nav
+
+标记导航，通常用于导航栏。
+
+
+
+### 10. 侧边栏 aside
+
+定义其所处内容之外的内容。如侧栏、文章的一组链接、广告、友情链接、相关产品列表等。
+
+
+
+### 11. 页脚 footer
+
+通常用于网页底部的制作
+
+
+
+### 12. 区块 section
+
+定义主要部分的主题内容。比如章节、页眉、页脚或文档中的其他部分。
+
+
+
+## 2. 布局标签
+
+### 1. div标签
+
+定义文档的分区或节，可以把文档分割为独立的、不同的部分。
+
+div属于块级元素
+
+### 2. span标签
+
+用来组合文档中的行内元素。
+
+
+
+## 3. html标签分类
+
+### 1. 块级标签
+
+1. 能够识别宽高，margin 和 padding 的上下左右的值均对其有效。
+2. 独占一行，默认排列方式为从上至下。
+3. p、div、ul、ol、li、dl、dt、dd、h1~h6、form
+
+
+
+### 2. 行内标签
+
+1.  设置宽高无效，不会自动换行。
+2. 对margin仅设置左右有效；padding 设置上下左右都有效，即会撑大空间。
+3. span、a、em、i、br
+
+
+
+### 3. 行内块标签
+
+1. 既有块级标签的特性，又有行内标签的特性。
+2. 不会自动换行，能够识别宽高。
+3. 默认排列方式为从左到右。
+4. img、input、textarea
